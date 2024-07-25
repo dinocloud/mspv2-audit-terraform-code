@@ -22,7 +22,6 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_securityhub_account.audit](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/securityhub_account) | resource |
 | [aws_securityhub_finding_aggregator.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/securityhub_finding_aggregator) | resource |
 
 ## Inputs
