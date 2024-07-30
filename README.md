@@ -35,11 +35,10 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_rule_cloudwatch"></a> [rule\_cloudwatch](#input\_rule\_cloudwatch) | Rule of event bridge to receive event of security hub | `string` | n/a | yes |
-| <a name="input_sns_mails"></a> [sns\_mails](#input\_sns\_mails) | Mail to send with sns tu-email@example.com | `string` | n/a | yes |
+| <a name="input_cloudwatch_rule_name"></a> [cloudwatch\_rule\_name](#input\_cloudwatch\_rule\_name) | Rule of event bridge to receive event of security hub | `string` | n/a | yes |
+| <a name="input_sns_email"></a> [sns\_email](#input\_sns\_email) | Mail to send with sns tu-email@example.com | `string` | n/a | yes |
 | <a name="input_sns_protocol"></a> [sns\_protocol](#input\_sns\_protocol) | protocole of sns topic | `string` | n/a | yes |
-| <a name="input_sns_target_id"></a> [sns\_target\_id](#input\_sns\_target\_id) | target id | `string` | n/a | yes |
-| <a name="input_sns_topic"></a> [sns\_topic](#input\_sns\_topic) | name of sns topic | `string` | n/a | yes |
+| <a name="input_sns_topic_name"></a> [sns\_topic\_name](#input\_sns\_topic\_name) | name of sns topic | `string` | n/a | yes |
 
 ## Outputs
 

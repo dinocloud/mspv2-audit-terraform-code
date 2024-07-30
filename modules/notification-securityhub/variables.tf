@@ -1,24 +1,20 @@
-variable "sns_topic" {
-    type = string
-    description = "security-hub-notifications"
+variable "sns_topic_name" {
+  type        = string
+  description = "Sns topic name"
 }
 
 variable "sns_protocol" {
-    type = string
-    description = "email"
+  type        = string
+  description = "SNS protocol"
+  default     = "email"
 }
 
-variable "sns_mails" {
-    type = string
-    description = "tu-email@example.com"
+variable "sns_email" {
+  type        = string
+  description = "Email address to receive notifications"
 }
 
-variable "rule_cloudwatch" {
-    type = string
-    description = "security-hub-rule"
-}
-
-variable "sns_target_id" {
-    type = string
-    description = "send-to-sns"
+variable "cloudwatch_rule_name" {
+  type        = string
+  description = "Cloudwatch rule name"
 }

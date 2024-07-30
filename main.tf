@@ -1,9 +1,8 @@
 # Main
 module "notification_security_hub" {
-  source          = "./modules/notification-securityhub"
-  sns_topic       = var.sns_topic
-  sns_protocol    = var.sns_protocol
-  sns_mails       = var.sns_mails
-  rule_cloudwatch = var.rule_cloudwatch
-  sns_target_id   = var.sns_target_id
+  source               = "./modules/notification-securityhub"
+  sns_topic_name       = var.sns_topic_name
+  sns_protocol         = var.sns_protocol
+  sns_email            = var.sns_email
+  cloudwatch_rule_name = var.cloudwatch_rule_name
 }
