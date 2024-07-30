@@ -1,5 +1,0 @@
-sns_topic       = "security-hub-notifications-test"
-sns_protocol    = "email"
-sns_mails       = "danielmaguirre92@gmail.com"
-rule_cloudwatch = "security-hub-rule-test"
-sns_target_id   = "send-to-sns-test"
