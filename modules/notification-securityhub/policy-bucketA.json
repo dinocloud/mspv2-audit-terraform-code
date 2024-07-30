@@ -1,0 +1,50 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": {
+				"Service": "logs.amazonaws.com"
+			},
+			"Action": [
+				"s3:PutObject",
+				"s3:*"
+			],
+			"Resource": "arn:aws:s3:::backups-logs-operation/*",
+			"Condition": {
+				"StringEquals": {
+					"aws:SourceAccount": "767398058472"
+				},
+				"ArnLike": {
+					"aws:SourceArn": "arn:aws:logs:*:*:log-group:*"
+				}
+			}
+		},
+		{
+			"Effect": "Allow",
+			"Principal": {
+				"Service": "logs.amazonaws.com"
+			},
+			"Action": [
+				"s3:GetBucketAcl",
+				"s3:*"
+			],
+			"Resource": "arn:aws:s3:::backups-logs-operation"
+		},
+		{
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::767398058472:role/service-role/send_logs_to_achive-role-hzs9xm3n"
+			},
+			"Action": [
+				"s3:GetObject",
+				"s3:ListBucket",
+				"s3:*"
+			],
+			"Resource": [
+				"arn:aws:s3:::backups-logs-operation",
+				"arn:aws:s3:::backups-logs-operation/*"
+			]
+		}
+	]
+}
