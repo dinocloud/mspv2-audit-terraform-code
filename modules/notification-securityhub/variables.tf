@@ -1,19 +1,20 @@
 variable "sns_topic_name" {
   type        = string
-  description = "name of sns topic"
+  description = "Sns topic name"
 }
 
 variable "sns_protocol" {
   type        = string
-  description = "protocole of sns topic"
+  description = "SNS protocol"
+  default     = "email"
 }
 
 variable "sns_email" {
   type        = string
-  description = "Mail to send with sns tu-email@example.com"
+  description = "Email address to receive notifications"
 }
 
 variable "cloudwatch_rule_name" {
   type        = string
-  description = "Rule of event bridge to receive event of security hub"
+  description = "Cloudwatch rule name"
 }
