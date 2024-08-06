@@ -12,7 +12,7 @@
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.60.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.61.0 |
 
 ## Modules
 
@@ -33,6 +33,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_cloudwatch_rule_name"></a> [cloudwatch\_rule\_name](#input\_cloudwatch\_rule\_name) | Cloudwatch rule name | `string` | n/a | yes |
+| <a name="input_severity_label"></a> [severity\_label](#input\_severity\_label) | value of severity label to notifty | `list(string)` | `null` | no |
 | <a name="input_sns_email"></a> [sns\_email](#input\_sns\_email) | Email address to receive notifications | `string` | n/a | yes |
 | <a name="input_sns_protocol"></a> [sns\_protocol](#input\_sns\_protocol) | SNS protocol | `string` | `"email"` | no |
 | <a name="input_sns_topic_name"></a> [sns\_topic\_name](#input\_sns\_topic\_name) | Sns topic name | `string` | n/a | yes |

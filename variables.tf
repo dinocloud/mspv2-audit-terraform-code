@@ -17,3 +17,9 @@ variable "cloudwatch_rule_name" {
   type        = string
   description = "Rule of event bridge to receive event of security hub"
 }
+
+variable "severity_label" {
+  description = "value of severity label to notifty"
+  type        = list(string)
+  default     = null
+}
