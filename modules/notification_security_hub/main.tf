@@ -16,7 +16,10 @@ resource "aws_cloudwatch_event_rule" "security_hub_rule" {
   description = "Capture Security Hub events."
   event_pattern = jsonencode({
     "source" : ["aws.securityhub"],
-    "detail-type" : ["Security Hub Findings - Imported"]
+    "detail-type" : ["Security Hub Findings - Imported"],
+    "Severity": {
+                "Label": var.severity_label
+            }
   })
 }
 
