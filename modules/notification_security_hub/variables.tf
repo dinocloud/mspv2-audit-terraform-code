@@ -20,7 +20,7 @@ variable "cloudwatch_rule_name" {
 }
 
 variable "severity_label" {
-    description = "value of severity label to notifty"
-    type        = list(string)
-    default     = null
+  description = "value of severity label to notifty"
+  type        = list(string)
+  default     = null
 }
